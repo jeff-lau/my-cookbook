@@ -1,0 +1,11 @@
+#root, #appContainer {
+  height: 100%;
+}
+
+.my-cookbook-root {
+  height: inherit;
+  .login-nav-bar {
+    text-align: right;
+    padding: 20px;
+  }
+}

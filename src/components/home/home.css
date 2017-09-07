@@ -1,0 +1,14 @@
+.home-background {
+  background-image: url("../../asset/images/food_backgroud.jpg");
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+  padding: 20px; }
+  .home-background .page-title {
+    height: inherit;
+    width: 50%;
+    float: right;
+    text-align: left;
+    font-size: 120px;
+    line-height: 100%;
+    vertical-align: bottom; }
