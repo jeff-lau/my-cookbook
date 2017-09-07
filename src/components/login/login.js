@@ -23,9 +23,14 @@ class Login extends Component {
 	}
 
 	facebookLogin() {
-		this.props.loginLoading()
+		const { loginLoading, userLogin, history } = this.props
+
+		loginLoading()
 		const provider = new firebase.auth.FacebookAuthProvider()
-		const loginCallBack = this.props.userLogin
+		const loginCallBack = () => {
+			userLogin()
+			history.push('/myrecipes')
+		}
 		this.auth.signInWithPopup(provider).then(function(result) {
 			const creds = result.credential;
 			const user = result.user;
