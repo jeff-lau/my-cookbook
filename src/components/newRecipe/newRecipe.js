@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PageWrapper from '../pageWrapper/pageWrapper'
-import { Input, Button, TextArea, Header, Segment, Form } from 'semantic-ui-react'
+import { Button, Header, Segment, Form } from 'semantic-ui-react'
+import { WrappedInput, WrappedTextArea } from "../formComponents/wrappedSemanticUI";
+import { required } from "../formComponents/reduxFormValidators";
 import { Field, reduxForm } from 'redux-form'
 
 import './newRecipe.css'
@@ -11,8 +13,11 @@ class NewRecipe extends Component {
 		super(props)
 	}
 
-	render() {
+	onSubmit() {
 
+	}
+
+	render() {
 		const { handleSubmit } = this.props
 
 		return(
@@ -21,17 +26,9 @@ class NewRecipe extends Component {
 					<Segment>
 						<Header>About your dish</Header>
 
-						<Form onSubmit={ handleSubmit }>
-							<div className="field">
-								<label htmlFor="dishName">Name</label>
-								<Field name="dishName" component={Input} placeholder="Name of your dish..." />
-							</div>
-
-							<div className="field">
-								<label htmlFor="dishName">Description</label>
-								<Field name="dishName" component={TextArea} placeholder="Describe your dish..." />
-							</div>
-
+						<Form onSubmit={ handleSubmit(this.onSubmit) }>
+							<Field name="dishName" component={WrappedInput} validate={required} placeholder="Name of your dish..." />
+							<Field name="dishDescription" component={WrappedTextArea} placeholder="Describe your dish..." />
 
 							<Button primary type="submit">Add Recipe</Button>
 							<Button secondary>Cancel</Button>
@@ -44,8 +41,10 @@ class NewRecipe extends Component {
 }
 
 const RecipeForm = reduxForm({
-	// a unique name for the form
-	form: 'recipe'
+	form: 'recipe',
+	onSubmitSuccess: (result, dispatch, props) => {
+		props.addRecipe()
+	}
 })(NewRecipe)
 
 

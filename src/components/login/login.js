@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import 'semantic-ui-css/semantic.min.css'
-import * as firebase from "firebase";
+import * as firebase from "firebase"
 import { Button } from 'semantic-ui-react'
 
 class Login extends Component {
@@ -13,9 +12,11 @@ class Login extends Component {
 	}
 
 	logOut() {
-		this.props.loginLoading()
+		const { loginLoading, userLogout, history } = this.props
+		loginLoading()
 		this.auth.signOut().then(() => {
-			this.props.userLogout()
+			userLogout()
+			history.push('/')
 		}).catch((error) => {
 			console.log("Signout failed")
 			console.log(error)
@@ -32,8 +33,8 @@ class Login extends Component {
 			history.push('/myrecipes')
 		}
 		this.auth.signInWithPopup(provider).then(function(result) {
-			const creds = result.credential;
-			const user = result.user;
+			const creds = result.credential
+			const user = result.user
 			loginCallBack(creds, user)
 		}).catch((error) => {
 			console.log(error.message)
