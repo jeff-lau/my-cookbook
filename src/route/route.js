@@ -4,7 +4,7 @@ import MyRecipesContainer from '../components/myRecipes/myRecipesContainer'
 import NewRecipeContainer from '../components/newRecipe/newRecipeContainer'
 import { Route, Switch } from 'react-router-dom'
 
-const routes = () => {
+const routes = (props) => {
 	return (
 		<Switch>
 			<Route exact path="/" component={Home}/>

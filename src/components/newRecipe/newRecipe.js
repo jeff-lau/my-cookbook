@@ -11,10 +11,14 @@ class NewRecipe extends Component {
 
 	constructor(props) {
 		super(props)
+		this.onCancel = this.onCancel.bind(this)
+	}
+
+	onCancel() {
+		this.props.history.push('/myrecipes')
 	}
 
 	onSubmit() {
-
 	}
 
 	render() {
@@ -31,7 +35,7 @@ class NewRecipe extends Component {
 							<Field name="dishDescription" component={WrappedTextArea} placeholder="Describe your dish..." />
 
 							<Button primary type="submit">Add Recipe</Button>
-							<Button secondary>Cancel</Button>
+							<Button secondary onClick={this.onCancel}>Cancel</Button>
 						</Form>
 					</Segment>
 				</div>
@@ -44,6 +48,7 @@ const RecipeForm = reduxForm({
 	form: 'recipe',
 	onSubmitSuccess: (result, dispatch, props) => {
 		props.addRecipe()
+		props.history.push('/myrecipes')
 	}
 })(NewRecipe)
 

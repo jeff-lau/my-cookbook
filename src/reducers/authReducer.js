@@ -36,4 +36,12 @@ export const userLogin = (payload) => ( { type : USER_LOGIN, payload })
 export const userLogout = () => ( { type : USER_LOGOUT })
 export const userLoginLoading = () => ({ type: USER_LOGIN_LOADING })
 
+// selectors
+export const getAuthDetails = ({ authReducer }) => {
+	return authReducer.authDetails
+}
+export const getUserDetails = ({ authReducer }) => {
+	return authReducer.userDetails
+}
+
 export default authReducer

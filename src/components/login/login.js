@@ -7,8 +7,20 @@ class Login extends Component {
 
 	constructor(props) {
 		super(props)
+		console.log(this.auth.currentUser)
+
+
+
 		this.logOut = this.logOut.bind(this)
 		this.facebookLogin = this.facebookLogin.bind(this)
+	}
+
+	componentDidMount() {
+		this.auth.onAuthStateChanged((function(user) {
+			if (user) {
+				this.props.userLogin({}, user)
+			}
+		}).bind(this));
 	}
 
 	logOut() {
@@ -28,14 +40,14 @@ class Login extends Component {
 
 		loginLoading()
 		const provider = new firebase.auth.FacebookAuthProvider()
-		const loginCallBack = () => {
-			userLogin()
+		const loginCallBack = (authDetails, userDetails) => {
+			userLogin(authDetails, userDetails)
 			history.push('/myrecipes')
 		}
 		this.auth.signInWithPopup(provider).then(function(result) {
-			const creds = result.credential
-			const user = result.user
-			loginCallBack(creds, user)
+			const authDetails = result.credential
+			const userDetails = result.user
+			loginCallBack(authDetails, userDetails)
 		}).catch((error) => {
 			console.log(error.message)
 		})
