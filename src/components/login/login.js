@@ -7,20 +7,8 @@ class Login extends Component {
 
 	constructor(props) {
 		super(props)
-		console.log(this.auth.currentUser)
-
-
-
 		this.logOut = this.logOut.bind(this)
 		this.facebookLogin = this.facebookLogin.bind(this)
-	}
-
-	componentDidMount() {
-		this.auth.onAuthStateChanged((function(user) {
-			if (user) {
-				this.props.userLogin({}, user)
-			}
-		}).bind(this));
 	}
 
 	logOut() {

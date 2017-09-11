@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, TextArea, Form } from 'semantic-ui-react'
+import { TextArea, Form } from 'semantic-ui-react'
 
 export const WrappedInput = (field) => {
 	return (

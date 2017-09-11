@@ -5,6 +5,7 @@ import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import * as firebase from "firebase"
 import { createStore, applyMiddleware, compose } from 'redux'
+import { Provider } from 'react-redux'
 import combinedReducers from './reducers/combinedReducers'
 import createSagaMiddleware from 'redux-saga'
 import sagas from './sagas/rootSagas'
@@ -16,6 +17,8 @@ const config = {
 	storageBucket: "my-cookbook-a5536.appspot.com",
 }
 firebase.initializeApp(config)
+
+
 
 // create the saga middleware
 const sagaMiddleware = createSagaMiddleware()
@@ -31,5 +34,5 @@ const store = createStore(
 // then run the saga
 sagaMiddleware.run(sagas)
 
-ReactDOM.render(<App store={store}/>, document.getElementById('root'))
+ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'))
 registerServiceWorker()

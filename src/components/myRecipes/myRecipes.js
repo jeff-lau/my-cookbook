@@ -8,7 +8,7 @@ class MyRecipes extends Component {
 
 	constructor(props) {
 		super(props)
-
+		console.log(props)
 		this.createNewRecipe = this.createNewRecipe.bind(this)
 	}
 
