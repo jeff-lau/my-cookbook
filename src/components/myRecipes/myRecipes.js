@@ -39,6 +39,7 @@ class MyRecipes extends Component {
 							const recipe = myRecipes[key]
 								return (
 									<Card
+										image={recipe.imageURL}
 										key={index}
 										header={recipe.dishName}
 										meta="Pie"

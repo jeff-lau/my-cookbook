@@ -8,6 +8,13 @@ export const WrappedInput = (field) => {
 	)
 }
 
+export const WrappedFileInput = (field) => {
+	return (
+		<Form.Input label='Dish name' type='file' placeholder={field.placeholder}
+								error={field.meta.touched && field.meta.invalid} {...field.input}></Form.Input>
+	)
+}
+
 export const WrappedTextArea = (field) => {
 	return (
 		<Form.Field control={TextArea} label='Describe your dish' placeholder='Tell us more about your dish...'

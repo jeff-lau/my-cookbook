@@ -9,7 +9,7 @@ export const saveToFirebaseDb = function * (action) {
 		const db = firebase.database()
 		const formValues = yield select(getFormValues('recipe'))
 		const userDetails = yield select(getUserDetails)
-		db.ref(`users/${userDetails.uid}`).child('recipes').push(formValues)
+		db.ref(`users/${userDetails.uid}`).child('recipes').child(action.payload).set(formValues)
 	} catch (e) {
 		console.log(e)
 	}
@@ -33,8 +33,8 @@ export const fetchFromFirebaseDb = function * () {
 export const SAVE_NEW_RECIPE_TO_FIREBASE = 'SAVE_NEW_RECIPE_TO_FIREBASE'
 export const FETCH_MY_RECIPES = 'FETCH_MY_RECIPES'
 
-export const saveNewRecipe = () => ({
-	type: SAVE_NEW_RECIPE_TO_FIREBASE
+export const saveNewRecipe = (recipeKey) => ({
+	type: SAVE_NEW_RECIPE_TO_FIREBASE, payload: recipeKey
 })
 
 export const fetchMyRecipes = () => ({

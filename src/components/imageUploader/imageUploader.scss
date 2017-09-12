@@ -1,0 +1,49 @@
+.image-display {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.image-uploader-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px lightgrey dashed;
+
+  &:hover {
+    border: 2px darkgrey dashed;
+  }
+
+  input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &:focus + label, & + label:hover{
+      color: darkgrey;
+    }
+
+    & + label {
+      padding:75px;
+      font-size: 2em;
+      font-weight: 700;
+      color: lightgrey;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  .progress-update {
+    font-size: 2em;
+    font-weight: 700;
+    color: lightgrey;
+  }
+}
