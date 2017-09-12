@@ -1,0 +1,27 @@
+.step-container {
+
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+
+  .step-image-container {
+    height: 80px;
+    width: 80px;
+  }
+
+  .step-description-container {
+    flex-grow: 1;
+    height: 100%;
+
+    .step-description {
+      border: none;
+      height: 100%;
+    }
+  }
+
+}

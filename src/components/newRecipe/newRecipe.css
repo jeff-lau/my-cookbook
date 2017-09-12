@@ -2,5 +2,9 @@
   font-size: 1.2em;
   display: block; }
 
+.new-recipe-container .main-image {
+  height: 150px;
+  width: 150px; }
+
 .new-recipe-container .field {
   padding-bottom: 20px; }

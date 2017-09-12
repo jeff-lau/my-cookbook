@@ -1,18 +1,18 @@
 .image-display {
-  width: 150px;
-  height: 150px;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain; }
 
 .image-uploader-container {
-  width: 150px;
-  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px lightgrey dashed; }
+  border: 2px lightgrey dashed;
+  height: 100%;
+  width: 100%; }
   .image-uploader-container:hover {
     border: 2px darkgrey dashed; }
   .image-uploader-container input {
@@ -25,7 +25,7 @@
     .image-uploader-container input:focus + label, .image-uploader-container input + label:hover {
       color: darkgrey; }
     .image-uploader-container input + label {
-      padding: 75px;
+      padding: 50%;
       font-size: 2em;
       font-weight: 700;
       color: lightgrey;

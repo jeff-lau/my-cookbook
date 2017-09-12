@@ -3,21 +3,20 @@ import { TextArea, Form } from 'semantic-ui-react'
 
 export const WrappedInput = (field) => {
 	return (
-		<Form.Input label='Dish name' type='text' placeholder={field.placeholder}
-								error={field.meta.touched && field.meta.invalid} {...field.input}></Form.Input>
-	)
-}
-
-export const WrappedFileInput = (field) => {
-	return (
-		<Form.Input label='Dish name' type='file' placeholder={field.placeholder}
+		<Form.Input type='text' placeholder={field.placeholder}
 								error={field.meta.touched && field.meta.invalid} {...field.input}></Form.Input>
 	)
 }
 
 export const WrappedTextArea = (field) => {
 	return (
-		<Form.Field control={TextArea} label='Describe your dish' placeholder='Tell us more about your dish...'
+		<Form.Field control={TextArea} {...field}
 								error={field.meta.touched && field.meta.invalid} {...field.input} />
+	)
+}
+
+export const WrappedPlainTextArea = (field) => {
+	return (
+		<TextArea {...field} {...field.input} />
 	)
 }

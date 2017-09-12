@@ -26,7 +26,7 @@ class ImageUploader extends Component {
 
 	handleSelectFiles(event) {
 
-		const { step, userKey, recipeKey } = this.props
+		const { userKey, recipeKey } = this.props
 		const { files } = event.target
 
 		if (files.length > 1) {
@@ -41,7 +41,6 @@ class ImageUploader extends Component {
 					.child('images')
 					.child(userKey)
 					.child(recipeKey)
-					.child(step)
 					.child(uuid.v4()).put(file)
 
 				this.uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED)(
@@ -89,7 +88,7 @@ class ImageUploader extends Component {
 	renderUploadIcon() {
 		const { id } = this.props
 		return (
-			<div className="image-uploader-container">
+			<div className="image-uploader-container" >
 				<input id={id} type='file' onChange={this.handleSelectFiles} />
 				<label htmlFor={id}>+</label>
 			</div>

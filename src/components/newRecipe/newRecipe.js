@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import PageWrapper from '../pageWrapper/pageWrapper'
 import { Button, Header, Segment, Form } from 'semantic-ui-react'
 import { WrappedInput, WrappedTextArea } from "../formComponents/wrappedSemanticUI";
-import { required } from "../formComponents/reduxFormValidators";
+import { required, maxLength, minLength } from "../formComponents/reduxFormValidators";
 import { Field, reduxForm } from 'redux-form'
 import ImageUploader from '../imageUploader/imageUploader'
-import * as firebase from 'firebase'
+import StepInput from '../stepInput/stepInput'
 import { forEach } from 'lodash'
+import ElementRepeater from '../elementRepeater/elementRepeater'
 
 import './newRecipe.css'
 
@@ -26,9 +27,9 @@ class NewRecipe extends Component {
 		this.props.history.push('/myrecipes')
 	}
 
-	onSuccessImageUpload(imageObject) {
+	onSuccessImageUpload(imageObject, formFieldName) {
 		this.imageReferences.push(imageObject)
-		this.props.change('imageURL', imageObject.url)
+		this.props.change(formFieldName, imageObject.url)
 	}
 
 	onSubmit() {
@@ -44,13 +45,23 @@ class NewRecipe extends Component {
 						<Header>About your dish</Header>
 
 						<Form onSubmit={ handleSubmit(this.onSubmit) }>
-							<Field name="dishName" component={WrappedInput} validate={required} placeholder="Name of your dish..." />
-							<Field name="dishDescription" component={WrappedTextArea} placeholder="Describe your dish..." />
+
+							<div className="field">
+								<div className="main-image">
+									<ImageUploader id="imageUploader" userKey={userKey} recipeKey={recipeKey} step="0" onSuccess={imageRef => (this.onSuccessImageUpload(imageRef, 'imageURL'))} />
+								</div>
+							</div>
+
+							<Field name="dishName" component={WrappedInput} validate={[required]} placeholder="Name of your dish..." />
+							<Field name="dishDescription" validate={[]} component={WrappedTextArea} placeholder="Describe your dish..." />
+
+							<Header>Steps</Header>
+							<div className="field">
+								<ElementRepeater component={StepInput} id="step" stepNumber={1} userKey={userKey} recipeKey={recipeKey} onImageUploadSuccess={this.onSuccessImageUpload}/>
+							</div>
 
 							<Button primary type="submit">Add Recipe</Button>
 							<Button secondary onClick={this.onCancel}>Cancel</Button>
-
-							<ImageUploader id="imageUploader" userKey={userKey} recipeKey={recipeKey} step="0" onSuccess={this.onSuccessImageUpload}/>
 
 						</Form>
 					</Segment>

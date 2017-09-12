@@ -40,7 +40,7 @@ class MyRecipes extends Component {
 								return (
 									<Card
 										image={recipe.imageURL}
-										key={index}
+										key={key}
 										header={recipe.dishName}
 										meta="Pie"
 										description={recipe.dishDescription}
