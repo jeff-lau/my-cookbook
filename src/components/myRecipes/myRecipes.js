@@ -8,10 +8,15 @@ class MyRecipes extends Component {
 	constructor(props) {
 		super(props)
 		this.createNewRecipe = this.createNewRecipe.bind(this)
+		this.openRecipe = this.openRecipe.bind(this)
 	}
 
 	componentDidMount() {
 		this.props.fetchMyRecipes()
+	}
+
+	openRecipe() {
+		alert('Open Recipe')
 	}
 
 	createNewRecipe() {
@@ -35,20 +40,21 @@ class MyRecipes extends Component {
 					</div>
 
 					{
-						Object.keys(myRecipes).map(function(key, index) {
+						Object.keys(myRecipes).map((function(key, index) {
 							const recipe = myRecipes[key]
 								return (
-									<div className="card-container" key={key}>
+									<div className="card-container" key={key} >
 										<Card
 											image={recipe.imageURL}
 											key={key}
 											header={recipe.dishName}
 											meta="Pie"
 											description={recipe.dishDescription}
+											onClick={this.openRecipe}
 										/>
 									</div>
 								)
-						})
+						}).bind(this))
 					}
 				</div>
 			</PageWrapper>
