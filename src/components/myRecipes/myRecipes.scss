@@ -1,3 +1,13 @@
 .my-recipes-page {
 
+  -moz-columns: 4 300px;
+  -webkit-columns: 4 300px;
+  -moz-column-gap: 5px;
+  -webkit-column-gap: 5px;
+
+  .card-container {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
 }

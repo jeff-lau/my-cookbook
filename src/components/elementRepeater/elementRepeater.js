@@ -25,7 +25,7 @@ class ElementRepeater extends Component {
 		let output = []
 		const { component : Component, ...rest } = this.props
 		for (let i = 1; i < this.state.repeat; i++) {
-			output.push(<div className="repeat-element-container"><Component {...rest} cloneIndex={i + 1} /></div>)
+			output.push(<div className="repeat-element-container" key={i + 1}><Component {...rest} cloneIndex={i + 1} /></div>)
 		}
 		return output
 	}

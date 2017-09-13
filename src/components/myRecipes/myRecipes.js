@@ -3,12 +3,10 @@ import { Card, Button } from 'semantic-ui-react'
 import PageWrapper from '../pageWrapper/pageWrapper'
 import './myRecipes.css'
 
-
 class MyRecipes extends Component {
 
 	constructor(props) {
 		super(props)
-		console.log(props)
 		this.createNewRecipe = this.createNewRecipe.bind(this)
 	}
 
@@ -26,33 +24,32 @@ class MyRecipes extends Component {
 
 		return (
 			<PageWrapper>
-				<div className="page-banner">
-					<Card
-						header='My Recipes'
-						meta='Yum'
-						description='All your delicious recipes at your finger tip.  Create a new recipe today!'
-						extra={createRecipeButton}
-					/>
+				<div className="my-recipes-page">
+					<div className="card-container" >
+						<Card
+							header='My Recipes'
+							meta='Yum'
+							description='All your delicious recipes at your finger tip.  Create a new recipe today!'
+							extra={createRecipeButton}
+						/>
+					</div>
 
 					{
 						Object.keys(myRecipes).map(function(key, index) {
 							const recipe = myRecipes[key]
 								return (
-									<Card
-										image={recipe.imageURL}
-										key={key}
-										header={recipe.dishName}
-										meta="Pie"
-										description={recipe.dishDescription}
-									/>
+									<div className="card-container" key={key}>
+										<Card
+											image={recipe.imageURL}
+											key={key}
+											header={recipe.dishName}
+											meta="Pie"
+											description={recipe.dishDescription}
+										/>
+									</div>
 								)
 						})
 					}
-
-				</div>
-
-				<div className="receipes-container">
-
 				</div>
 			</PageWrapper>
 		)
