@@ -14,7 +14,6 @@ import './newRecipe.css'
 class NewRecipe extends Component {
 
 	imageReferences = []
-	stepImages = []
 
 	constructor(props) {
 		super(props)

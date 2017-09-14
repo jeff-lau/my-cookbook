@@ -1,6 +1,12 @@
 #root, #appContainer {
   height: 100%; }
 
+#appContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center; }
+
 .my-cookbook-root {
   height: inherit; }
   .my-cookbook-root .login-nav-bar {

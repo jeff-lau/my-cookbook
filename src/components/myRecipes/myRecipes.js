@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, Button } from 'semantic-ui-react'
 import PageWrapper from '../pageWrapper/pageWrapper'
+import { Input } from 'semantic-ui-react'
 import './myRecipes.css'
 
 class MyRecipes extends Component {
@@ -15,8 +16,8 @@ class MyRecipes extends Component {
 		this.props.fetchMyRecipes()
 	}
 
-	openRecipe() {
-		alert('Open Recipe')
+	openRecipe(key) {
+		this.props.history.push(`/myrecipes/${key}`)
 	}
 
 	createNewRecipe() {
@@ -29,6 +30,9 @@ class MyRecipes extends Component {
 
 		return (
 			<PageWrapper>
+				<div className="filter-input-container">
+					<Input fluid className="filter-input" type="text" size="huge" placeholder="Search..."/>
+				</div>
 				<div className="my-recipes-page">
 					<div className="card-container" >
 						<Card
@@ -50,7 +54,7 @@ class MyRecipes extends Component {
 											header={recipe.dishName}
 											meta="Pie"
 											description={recipe.dishDescription}
-											onClick={this.openRecipe}
+											onClick={() => (this.openRecipe(key))}
 										/>
 									</div>
 								)
