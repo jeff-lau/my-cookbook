@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './recipe.css'
 import { Button } from 'semantic-ui-react'
-import PageWrapper from '../pageWrapper/pageWrapper'
-
+import StepDisplay from '../stepDisplay/stepDisplay'
 class Recipe extends Component {
 
 	constructor(props) {
@@ -21,6 +20,12 @@ class Recipe extends Component {
 	render() {
 
 		const { imageURL, dishName } = this.props.recipe
+		const steps = []
+		for (var name in this.props.recipe) {
+			if (name.startsWith('step')) {
+				steps.push(this.props.recipe[name])
+			}
+		}
 		return (
 			<div className="banner-Image" style={{"backgroundImage" : `url(${imageURL})`}}>
 				<Button secondary onClick={this.handleCancel}>Cancel</Button>
@@ -37,6 +42,10 @@ class Recipe extends Component {
 						</div>
 						<div className="method">
 							Method
+							<br />
+							{
+								steps.map((step, index) => (<StepDisplay step={step} key={index}/>))
+							}
 						</div>
 					</div>
 				</div>
