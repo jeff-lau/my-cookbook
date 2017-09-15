@@ -21,16 +21,18 @@ class Recipe extends Component {
 
 		const { imageURL, dishName } = this.props.recipe
 		const steps = []
+		const ingredients = []
 		for (var name in this.props.recipe) {
 			if (name.startsWith('step')) {
 				steps.push(this.props.recipe[name])
 			}
+			if (name.startsWith(('ingredient'))) {
+				ingredients.push(this.props.recipe[name])
+			}
 		}
+
 		return (
 			<div className="banner-Image" style={{"backgroundImage" : `url(${imageURL})`}}>
-				<Button secondary onClick={this.handleCancel}>Cancel</Button>
-
-
 				<div className="content-area">
 					<div className="recipe-title">
 						{dishName}
@@ -38,15 +40,22 @@ class Recipe extends Component {
 
 					<div className="recipe-container">
 						<div className="ingredients">
-							Ingredients
+							<div className="content-title">Ingredients</div>
+							<br />
+							<ul className="ingredients-list">
+								{
+									ingredients.map((ingredient, index) => (<li key={index}>{ingredient}</li>))
+								}
+							</ul>
 						</div>
 						<div className="method">
-							Method
+							<div className="content-title">Method</div>
 							<br />
 							{
 								steps.map((step, index) => (<StepDisplay step={step} key={index}/>))
 							}
 						</div>
+						<Button secondary onClick={this.handleCancel}>Cancel</Button>
 					</div>
 				</div>
 			</div>

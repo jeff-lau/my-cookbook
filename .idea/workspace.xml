@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66100c51-52e5-4f9e-8e61-2b1a67f2c2b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ingredientInput/ingredientInput.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/login/login.css" afterPath="$PROJECT_DIR$/src/components/ingredientInput/ingredientInput.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.js" afterPath="$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/myRecipes/myRecipes.css" afterPath="$PROJECT_DIR$/src/components/myRecipes/myRecipes.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss" afterPath="$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/newRecipe/newRecipe.js" afterPath="$PROJECT_DIR$/src/components/newRecipe/newRecipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/recipe/recipe.css" afterPath="$PROJECT_DIR$/src/components/recipe/recipe.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/recipe/recipe.js" afterPath="$PROJECT_DIR$/src/components/recipe/recipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/recipe/recipe.scss" afterPath="$PROJECT_DIR$/src/components/recipe/recipe.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,27 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="recipe.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="recipe.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="42">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding>
-                <marker date="1505368423000" expanded="true" signature="434:624" ph="{...}" />
-                <marker date="1505368423000" expanded="true" signature="659:795" ph="{...}" />
-                <marker date="1505368423000" expanded="true" signature="845:988" ph="{...}" />
+                <marker date="1505451949000" expanded="true" signature="1642:1664" ph="{...}" />
+                <marker date="1505451949000" expanded="true" signature="1714:1812" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -45,43 +38,9 @@
       <file leaf-file-name="recipe.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="70">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stepInput.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/stepInput/stepInput.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-              <folding>
-                <marker date="1505194346000" expanded="true" signature="974:1038" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stepInput.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/stepInput/stepInput.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stepDisplay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -96,35 +55,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stepDisplay.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.scss">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipeContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/recipe/recipeContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="-100">
+              <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <marker date="1505089776000" expanded="true" signature="1394:1419" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newRecipe.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/newRecipe/newRecipe.js">
+      <file leaf-file-name="loginContainer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/login/loginContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="-60">
+              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myRecipes.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myRecipes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/myRecipes/myRecipes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <marker date="1505361593000" expanded="true" signature="755:1685" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="800:904" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="942:1667" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="980:1189" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="981:1189" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="994:1177" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="1360:1618" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="1361:1618" ph="..." />
+                <marker date="1505361593000" expanded="true" signature="1378:1602" ph="..." />
               </folding>
             </state>
           </provider>
@@ -212,25 +209,28 @@
         <option value="$PROJECT_DIR$/src/components/imageUploader/imageUploader.js" />
         <option value="$PROJECT_DIR$/src/components/stepInput/stepInput.scss" />
         <option value="$PROJECT_DIR$/src/components/imageUploader/imageUploader.scss" />
-        <option value="$PROJECT_DIR$/src/components/formComponents/wrappedSemanticUI.js" />
         <option value="$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.scss" />
         <option value="$PROJECT_DIR$/src/components/stepInput/stepInput.js" />
-        <option value="$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/pageWrapper/pageWrapper.css" />
         <option value="$PROJECT_DIR$/src/components/myRecipes/myRecipes.css" />
         <option value="$PROJECT_DIR$/src/App.scss" />
         <option value="$PROJECT_DIR$/src/components/pageWrapper/pageWrapper.scss" />
-        <option value="$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss" />
         <option value="$PROJECT_DIR$/src/components/myRecipes/myRecipes.js" />
         <option value="$PROJECT_DIR$/src/components/myRecipes/myRecipesContainer.js" />
         <option value="$PROJECT_DIR$/src/components/recipe/recipeContainer.js" />
         <option value="$PROJECT_DIR$/src/route/route.js" />
-        <option value="$PROJECT_DIR$/src/components/newRecipe/newRecipe.js" />
-        <option value="$PROJECT_DIR$/src/components/recipe/recipe.scss" />
         <option value="$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.js" />
-        <option value="$PROJECT_DIR$/src/components/recipe/recipe.js" />
         <option value="$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.scss" />
+        <option value="$PROJECT_DIR$/src/components/newRecipe/newRecipe.js" />
+        <option value="$PROJECT_DIR$/src/components/ingredientInput/ingredientInput.js" />
+        <option value="$PROJECT_DIR$/src/components/formComponents/wrappedSemanticUI.js" />
+        <option value="$PROJECT_DIR$/src/components/ingredientInput/ingredientInput.scss" />
+        <option value="$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.js" />
+        <option value="$PROJECT_DIR$/src/components/recipe/recipe.js" />
+        <option value="$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss" />
+        <option value="$PROJECT_DIR$/build/index.html" />
+        <option value="$PROJECT_DIR$/src/components/recipe/recipe.scss" />
       </list>
     </option>
   </component>
@@ -310,7 +310,58 @@
               <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="elementRepeater" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="formComponents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ingredientInput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ingredientInput" type="462c0819:PsiDirectoryNode" />
+              <item name="ingredientInput.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="myRecipes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="myRecipes" type="462c0819:PsiDirectoryNode" />
+              <item name="myRecipes.scss" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
@@ -333,13 +384,6 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="recipe" type="462c0819:PsiDirectoryNode" />
               <item name="recipe.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-cookbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="stepDisplay" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-cookbook" type="b2602c69:ProjectViewProjectNode" />
@@ -502,7 +546,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95132000" />
+    <option name="totallyTimeSpent" value="103944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -570,26 +614,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions/package.json" />
-    <entry file="file://$PROJECT_DIR$/database.rules.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebase.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -598,7 +626,7 @@
         <state relative-caret-position="30">
           <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="20" />
           <folding>
-            <marker date="1505345822000" expanded="true" signature="268:270" ph="..." />
+            <marker date="1505374942000" expanded="true" signature="268:270" ph="..." />
           </folding>
         </state>
       </provider>
@@ -623,14 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/loginContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sagas/rootSagas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -644,7 +664,7 @@
         <state relative-caret-position="45">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
-            <marker date="1505284878000" expanded="true" signature="17:22" ph="{...}" />
+            <marker date="1505374942000" expanded="true" signature="17:22" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -705,56 +725,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <marker date="1505198777000" expanded="true" signature="822:1095" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/imageUploader/imageUploader.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57">
           <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/formComponents/wrappedSemanticUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-          <folding>
-            <marker date="1505089776000" expanded="true" signature="1394:1419" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,7 +778,7 @@
         <state relative-caret-position="54">
           <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -828,14 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -869,7 +836,7 @@
         <state relative-caret-position="197">
           <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
             <marker date="1505362688000" expanded="true" signature="600:1057" ph="..." />
           </folding>
         </state>
@@ -883,97 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/myRecipes/myRecipes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <marker date="1505361593000" expanded="true" signature="755:1685" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="800:904" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="942:1667" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="980:1189" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="981:1189" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="994:1177" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="1360:1618" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="1361:1618" ph="..." />
-            <marker date="1505361593000" expanded="true" signature="1378:1602" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <marker date="1505368423000" expanded="true" signature="434:624" ph="{...}" />
-            <marker date="1505368423000" expanded="true" signature="659:795" ph="{...}" />
-            <marker date="1505368423000" expanded="true" signature="845:988" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/newRecipe/newRecipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipeContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stepInput/stepInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <marker date="1505194346000" expanded="true" signature="974:1038" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stepInput/stepInput.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -990,8 +870,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stepDisplay/stepDisplay.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="267">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/stepInput/stepInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <marker date="1505194346000" expanded="true" signature="974:1038" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/newRecipe/newRecipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="58" column="57" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/formComponents/wrappedSemanticUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ingredientInput/ingredientInput.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/elementRepeater/elementRepeater.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <marker date="1505434880000" expanded="true" signature="852:1125" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ingredientInput/ingredientInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipeContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/myRecipes/myRecipes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <marker date="1505361593000" expanded="true" signature="755:1685" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="800:904" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="942:1667" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="980:1189" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="981:1189" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="994:1177" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="1360:1618" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="1361:1618" ph="..." />
+            <marker date="1505361593000" expanded="true" signature="1378:1602" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/myRecipes/myRecipes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1505451949000" expanded="true" signature="1642:1664" ph="{...}" />
+            <marker date="1505451949000" expanded="true" signature="1714:1812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/recipe/recipe.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <marker date="1505089776000" expanded="true" signature="1394:1419" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/loginContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
           <folding />
         </state>
       </provider>

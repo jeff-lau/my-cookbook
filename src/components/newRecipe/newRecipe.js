@@ -3,6 +3,7 @@ import PageWrapper from '../pageWrapper/pageWrapper'
 import { Button, Header, Segment, Form } from 'semantic-ui-react'
 import { WrappedInput, WrappedTextArea } from "../formComponents/wrappedSemanticUI";
 import { required, maxLength, minLength } from "../formComponents/reduxFormValidators";
+import IngredientInput from '../ingredientInput/ingredientInput'
 import { Field, reduxForm } from 'redux-form'
 import ImageUploader from '../imageUploader/imageUploader'
 import StepInput from '../stepInput/stepInput'
@@ -54,7 +55,10 @@ class NewRecipe extends Component {
 							<Field name="dishName" component={WrappedInput} validate={[required]} placeholder="Name of your dish..." />
 							<Field name="dishDescription" validate={[]} component={WrappedTextArea} placeholder="Describe your dish..." />
 
-							<Header>Steps</Header>
+							<Header>Ingredients</Header>
+							<ElementRepeater component={IngredientInput} />
+
+							<Header>Method</Header>
 							<div className="field">
 								<ElementRepeater component={StepInput} id="step" stepNumber={1} userKey={userKey} recipeKey={recipeKey} onImageUploadSuccess={this.onSuccessImageUpload}/>
 							</div>

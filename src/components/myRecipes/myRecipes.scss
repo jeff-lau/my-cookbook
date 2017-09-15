@@ -29,3 +29,14 @@
   }
 
 }
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .my-recipes-page {
+    -moz-columns: 1 300px;
+    -webkit-columns: 1 300px;
+  }
+}

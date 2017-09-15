@@ -15,7 +15,8 @@ class ElementRepeater extends Component {
 		}
 	}
 
-	handleClick() {
+	handleClick(event) {
+		event.preventDefault()
 		this.setState({
 			repeat: this.state.repeat + 1
 		})
@@ -41,7 +42,7 @@ class ElementRepeater extends Component {
 				{
 					forEach(this.repeatComponent(), (component) => (component))
 				}
-				<Button basic color='blue' onClick={this.handleClick}>Add another step</Button>
+				<Button basic color='blue' onClick={this.handleClick}>Add another item</Button>
 			</div>
 		)
 	}
