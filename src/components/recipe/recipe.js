@@ -2,15 +2,17 @@ import React, { Component } from 'react'
 import './recipe.css'
 import { Button } from 'semantic-ui-react'
 import StepDisplay from '../stepDisplay/stepDisplay'
+import StepCarouselContainer from '../stepCarousel/stepCarouselContainer'
 class Recipe extends Component {
 
 	constructor(props) {
 		super(props)
 		this.handleCancel = this.handleCancel.bind(this)
+		this.handleStepClick = this.handleStepClick.bind(this)
 	}
 
-	componentDidMount() {
-
+	handleStepClick(stepIndex) {
+		this.props.toggleCarousel(true, stepIndex)
 	}
 
 	handleCancel() {
@@ -18,8 +20,8 @@ class Recipe extends Component {
 	}
 
 	render() {
-
-		const { imageURL, dishName } = this.props.recipe
+		console.log('render recipe')
+		const { recipe: { imageURL, dishName }} = this.props
 		const steps = []
 		const ingredients = []
 		for (var name in this.props.recipe) {
@@ -52,9 +54,11 @@ class Recipe extends Component {
 							<div className="content-title">Method</div>
 							<br />
 							{
-								steps.map((step, index) => (<StepDisplay step={step} key={index}/>))
+								steps.map((step, index) => (<StepDisplay step={step} key={index} steps={steps} stepIndex={index} onClick={() => (this.handleStepClick(index))}/>))
 							}
 						</div>
+
+						<StepCarouselContainer steps={steps} />
 						<Button secondary onClick={this.handleCancel}>Cancel</Button>
 					</div>
 				</div>

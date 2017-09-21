@@ -5,6 +5,10 @@
   align-items: center;
   margin-bottom: 10px;
 
+  &:hover {
+    //background-color: lightgrey;
+  }
+
   .step-image {
     background-repeat: no-repeat;
     background-size: cover;

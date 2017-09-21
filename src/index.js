@@ -4,11 +4,13 @@ import './index.css'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import * as firebase from "firebase"
-import { createStore, applyMiddleware, compose } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import combinedReducers from './reducers/combinedReducers'
 import createSagaMiddleware from 'redux-saga'
 import sagas from './sagas/rootSagas'
+import { composeWithDevTools } from 'redux-devtools-extension';
+
 
 const config = {
 	apiKey: "AIzaSyBpDfBUSC5y41bn3FSIbIvy8_TmdL20PvE",
@@ -18,16 +20,14 @@ const config = {
 }
 firebase.initializeApp(config)
 
-
-
 // create the saga middleware
 const sagaMiddleware = createSagaMiddleware()
 // mount it on the Store
+
 const store = createStore(
 	combinedReducers,
-	compose(
-		applyMiddleware(sagaMiddleware),
-		window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	composeWithDevTools(
+		applyMiddleware(sagaMiddleware)
 	)
 )
 

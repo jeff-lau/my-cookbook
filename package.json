@@ -16,6 +16,7 @@
     "react-scripts": "1.0.13",
     "react-sizeme": "^2.3.4",
     "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
     "redux-form": "^7.0.4",
     "redux-saga": "^0.15.6",
     "semantic-ui-css": "^2.2.12",

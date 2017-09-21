@@ -1,0 +1,64 @@
+.modal-container {
+  height: 90%; }
+  .modal-container .modal-content {
+    height: 100%; }
+  .modal-container .actions {
+    background-color: black !important;
+    color: white !important; }
+    .modal-container .actions i:hover {
+      color: lightgrey;
+      cursor: pointer; }
+
+.carousel-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: stretch;
+  background-color: black;
+  height: 100%; }
+  .carousel-container .modal-content {
+    height: 100%; }
+  .carousel-container .previous-step, .carousel-container .next-step, .carousel-container .current-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    color: white; }
+  .carousel-container .previous-step, .carousel-container .next-step {
+    flex-basis: 20%; }
+    .carousel-container .previous-step i:hover, .carousel-container .next-step i:hover {
+      color: lightgrey;
+      cursor: pointer; }
+  .carousel-container .current-step {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    flex-grow: 1; }
+    .carousel-container .current-step .step-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 10px;
+      height: 65%;
+      background-color: white; }
+    .carousel-container .current-step .step-description {
+      flex-grow: 1;
+      text-align: left;
+      overflow-y: scroll; }
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .carousel-container {
+    flex-flow: row wrap; }
+    .carousel-container .previous-step {
+      order: 2;
+      flex-grow: 1;
+      opacity: 0.8; }
+    .carousel-container .current-step {
+      order: 1;
+      flex-basis: 100%;
+      height: 80%; }
+      .carousel-container .current-step .step-image {
+        height: 70%; }
+    .carousel-container .next-step {
+      order: 3;
+      flex-grow: 1; } }
