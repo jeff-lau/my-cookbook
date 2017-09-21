@@ -53,6 +53,12 @@
       flex-basis: calc(70% - 1px);
       height: 100%;
       overflow-y: scroll; }
+      .banner-Image .recipe-container .method .step-display-container {
+        border-radius: 3px;
+        border: 1px transparent solid; }
+        .banner-Image .recipe-container .method .step-display-container:hover {
+          border: 1px lightgrey solid;
+          cursor: pointer; }
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .banner-Image {

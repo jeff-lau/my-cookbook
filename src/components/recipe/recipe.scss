@@ -63,6 +63,16 @@
       flex-basis: calc(70% - 1px);
       height: 100%;
       overflow-y: scroll;
+
+      .step-display-container {
+        border-radius: 3px;
+        border: 1px transparent solid;
+
+        &:hover {
+          border: 1px lightgrey solid;
+          cursor: pointer;
+        }
+      }
     }
 
   }
