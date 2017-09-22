@@ -46,14 +46,18 @@ class NewRecipe extends Component {
 
 						<Form onSubmit={ handleSubmit(this.onSubmit) }>
 
-							<div className="field">
-								<div className="main-image">
-									<ImageUploader id="imageUploader" userKey={userKey} recipeKey={recipeKey} step="0" onSuccess={imageRef => (this.onSuccessImageUpload(imageRef, 'imageURL'))} />
+							<div className="top-segment-container">
+								<div className="image-container">
+									<div className="main-image">
+										<ImageUploader id="imageUploader" userKey={userKey} recipeKey={recipeKey} step="0" onSuccess={imageRef => (this.onSuccessImageUpload(imageRef, 'imageURL'))} />
+									</div>
+								</div>
+
+								<div className="name-desc-container">
+									<Field name="dishName" component={WrappedInput} validate={[required]} placeholder="Name of your dish..." />
+									<Field name="dishDescription" className="dish-description" validate={[]} component={WrappedTextArea} placeholder="Describe your dish..." />
 								</div>
 							</div>
-
-							<Field name="dishName" component={WrappedInput} validate={[required]} placeholder="Name of your dish..." />
-							<Field name="dishDescription" validate={[]} component={WrappedTextArea} placeholder="Describe your dish..." />
 
 							<Header>Ingredients</Header>
 							<ElementRepeater component={IngredientInput} />

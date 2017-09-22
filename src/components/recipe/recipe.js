@@ -43,7 +43,6 @@ class Recipe extends Component {
 					<div className="recipe-container">
 						<div className="ingredients">
 							<div className="content-title">Ingredients</div>
-							<br />
 							<ul className="ingredients-list">
 								{
 									ingredients.map((ingredient, index) => (<li key={index}>{ingredient}</li>))

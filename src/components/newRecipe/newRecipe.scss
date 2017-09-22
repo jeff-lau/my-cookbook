@@ -5,12 +5,33 @@
   }
 
   .main-image {
-    height: 150px;
+    height: 200px;
     width: 150px
   }
 
-  .field {
-    padding-bottom: 20px;
+  .top-segment-container {
+    display: flex;
+    flex-flow: row wrap;
+
+    .image-container {
+      margin-right: 20px;
+    }
+
+    .name-desc-container {
+      flex-grow: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: stretch;
+
+      .dish-description {
+        flex-grow: 1;
+        height: 100%;
+
+        textarea {
+          height: 100%;
+        }
+      }
+    }
   }
 }
 

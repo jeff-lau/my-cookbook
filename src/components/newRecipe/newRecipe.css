@@ -3,8 +3,21 @@
   display: block; }
 
 .new-recipe-container .main-image {
-  height: 150px;
+  height: 200px;
   width: 150px; }
 
-.new-recipe-container .field {
-  padding-bottom: 20px; }
+.new-recipe-container .top-segment-container {
+  display: flex;
+  flex-flow: row wrap; }
+  .new-recipe-container .top-segment-container .image-container {
+    margin-right: 20px; }
+  .new-recipe-container .top-segment-container .name-desc-container {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch; }
+    .new-recipe-container .top-segment-container .name-desc-container .dish-description {
+      flex-grow: 1;
+      height: 100%; }
+      .new-recipe-container .top-segment-container .name-desc-container .dish-description textarea {
+        height: 100%; }
