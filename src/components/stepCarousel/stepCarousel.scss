@@ -82,6 +82,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
       order: 2;
       flex-grow: 1;
       opacity: 0.8;
+      height: auto;
     }
     .current-step {
       order: 1;
@@ -95,7 +96,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .next-step {
       order: 3;
       flex-grow: 1;
+      height: auto;
     }
-
   }
 }

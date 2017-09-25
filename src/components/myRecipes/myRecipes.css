@@ -19,5 +19,10 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .my-recipes-page {
-    -moz-columns: 1 300px;
-    -webkit-columns: 1 300px; } }
+    columns: 1 auto;
+    column-gap: 0px; }
+    .my-recipes-page .card-container {
+      width: 100%;
+      border-bottom: none; }
+      .my-recipes-page .card-container .ui.card {
+        width: 100%; } }

@@ -34,7 +34,7 @@ class MyRecipes extends Component {
 					<Input fluid className="filter-input" type="text" size="huge" placeholder="Search..."/>
 				</div>
 				<div className="my-recipes-page">
-					<div className="card-container" >
+					<div className="card-container">
 						<Card
 							header='My Recipes'
 							meta='Yum'
