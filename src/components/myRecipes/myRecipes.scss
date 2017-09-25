@@ -6,15 +6,11 @@
   input {
     border: none;
   }
-
 }
 
 .my-recipes-page {
-
-  -moz-columns: 4 300px;
-  -webkit-columns: 4 300px;
-  -moz-column-gap: 5px;
-  -webkit-column-gap: 5px;
+  columns: 4 300px;
+  column-gap: 1px;
 
   .card-container {
     display: inline-block;

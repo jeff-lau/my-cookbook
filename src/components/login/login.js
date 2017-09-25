@@ -28,6 +28,10 @@ class Login extends Component {
 
 		loginLoading()
 		const provider = new firebase.auth.FacebookAuthProvider()
+		provider.setCustomParameters({
+			'display': 'popup'
+		});
+
 		const loginCallBack = (authDetails, userDetails) => {
 			userLogin(authDetails, userDetails)
 			history.push('/myrecipes')

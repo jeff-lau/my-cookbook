@@ -19,6 +19,7 @@
   .carousel-container .modal-content {
     height: 100%; }
   .carousel-container .previous-step, .carousel-container .next-step, .carousel-container .current-step {
+    height: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: center;

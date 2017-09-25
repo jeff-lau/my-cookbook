@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './recipe.css'
-import { Button } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 import StepDisplay from '../stepDisplay/stepDisplay'
 import StepCarouselContainer from '../stepCarousel/stepCarouselContainer'
 class Recipe extends Component {
@@ -35,11 +35,12 @@ class Recipe extends Component {
 
 		return (
 			<div className="banner-Image" style={{"backgroundImage" : `url(${imageURL})`}}>
+
 				<div className="content-area">
 					<div className="recipe-title">
 						{dishName}
+						<Icon className="close-icon" name="remove" size="large" onClick={this.handleCancel} />
 					</div>
-
 					<div className="recipe-container">
 						<div className="ingredients">
 							<div className="content-title">Ingredients</div>
@@ -58,7 +59,6 @@ class Recipe extends Component {
 						</div>
 
 						<StepCarouselContainer steps={steps} />
-						<Button secondary onClick={this.handleCancel}>Cancel</Button>
 					</div>
 				</div>
 			</div>

@@ -22,9 +22,14 @@
     padding: 20px;
     opacity: 0.8;
     background-color: black;
-    margin-bottom: 1px;
     font-weight: bold;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin-bottom: 1px; }
+    .banner-Image .recipe-title .close-icon {
+      float: right; }
+      .banner-Image .recipe-title .close-icon:hover {
+        color: lightgrey;
+        cursor: pointer; }
   .banner-Image .recipe-container {
     color: white;
     display: flex;
