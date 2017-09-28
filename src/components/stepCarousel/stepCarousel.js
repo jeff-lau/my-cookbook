@@ -35,29 +35,32 @@ class StepCarousel extends Component {
 		const hasNextStep = stepIndex < steps.length - 1
 		const hasPreviousStep = stepIndex > 0
 
-		return(
-			<Modal open={isCarouselOpen} className="modal-container" size="fullscreen">
-				<Modal.Actions>
-					<Icon name="remove" size="large" onClick={this.handleClose} />
-				</Modal.Actions>
-				<Modal.Content className="modal-content" style={{background: "black"}}>
-					<div className="carousel-container">
-						<div className="previous-step">
-							{ !hasPreviousStep || <Icon name="chevron left" size="large" onClick={this.handlePrevious}/> }
-						</div>
-						<div className="current-step">
-							<div className="step-image" style={{backgroundImage: `url(${currentStep.imageURL})`}} />
-							<div className="step-description">
-								{currentStep.description}
+		if (steps.length > 0) {
+			return(
+				<Modal open={isCarouselOpen} className="modal-container" size="fullscreen">
+					<Modal.Actions>
+						<Icon name="remove" size="large" onClick={this.handleClose} />
+					</Modal.Actions>
+					<Modal.Content className="modal-content" style={{background: "black"}}>
+						<div className="carousel-container">
+							<div className="previous-step">
+								{ !hasPreviousStep || <Icon name="chevron left" size="large" onClick={this.handlePrevious}/> }
+							</div>
+							<div className="current-step">
+								<div className="step-image" style={{backgroundImage: `url(${currentStep.imageURL})`}} />
+								<div className="step-description">
+									{currentStep.description}
+								</div>
+							</div>
+							<div className="next-step">
+								{!hasNextStep || <Icon name="chevron right" size="large" onClick={this.handleNext} />}
 							</div>
 						</div>
-						<div className="next-step">
-							{!hasNextStep || <Icon name="chevron right" size="large" onClick={this.handleNext} />}
-						</div>
-					</div>
-				</Modal.Content>
-			</Modal>
-		)
+					</Modal.Content>
+				</Modal>
+			)
+		}
+		return ''
 	}
 }
 

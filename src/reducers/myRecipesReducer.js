@@ -11,7 +11,6 @@ function myRecipesReducer(state = initState, action) {
 			}
 		default:
 			return state
-
 	}
 }
 
